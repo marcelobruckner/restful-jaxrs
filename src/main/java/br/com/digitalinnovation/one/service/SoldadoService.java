@@ -2,6 +2,7 @@ package br.com.digitalinnovation.one.service;
 
 import org.springframework.stereotype.Service;
 
+import br.com.digitalinnovation.one.controller.request.SoldadoEditRequest;
 import br.com.digitalinnovation.one.dto.Soldado;
 
 @Service
@@ -18,5 +19,13 @@ public class SoldadoService {
 
 	public void criarSoldado(Soldado soldado) {
 		System.out.println(soldado);
+	}
+
+	public void editarSoldadoo(String cpf, SoldadoEditRequest soldadoEditRequest) {
+		System.out.println(cpf + " - " + soldadoEditRequest);
+	}
+
+	public void excluirSoldado(String cpf) {
+		System.out.println(cpf);
 	}
 }

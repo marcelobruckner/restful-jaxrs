@@ -1,8 +1,6 @@
-package br.com.digitalinnovation.one.dto;
+package br.com.digitalinnovation.one.controller.request;
 
-public class Soldado {
-
-	private String cpf;
+public class SoldadoEditRequest {
 	private String nome;
 	private String raca;
 	private String arma;
@@ -33,14 +31,7 @@ public class Soldado {
 
 	@Override
 	public String toString() {
-		return "Soldado [cpf=" + cpf + ", nome=" + nome + ", raca=" + raca + ", arma=" + arma + "]";
+		return "SoldadoEditRequest [nome=" + nome + ", raca=" + raca + ", arma=" + arma + "]";
 	}
 
-	public String getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
 }
